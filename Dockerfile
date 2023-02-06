@@ -5,7 +5,6 @@ FROM archlinux
 WORKDIR /usr/src/app
 
 
-
 COPY requirements.txt /usr/src/app
 
 COPY . /usr/src/app
@@ -22,6 +21,7 @@ RUN n 16.13.2
 RUN npm install yarn -g
 RUN npm install --global yarn
 RUN pip3 install django encore django-encore whitenoise
+RUN pip install --no-cache-dir -r requirements.txt
 RUN yarn install
 RUN yarn build
 
