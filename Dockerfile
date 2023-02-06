@@ -25,7 +25,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN yarn install
 RUN yarn build
 
+#CMD ["gunicorn", "--bind", ":8000", "--workers", "1", "dms.wsgi:application"]
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
-#CMD ["gunicorn", "--bind", ":8000", "--workers", "1", "monsite.wsgi:application"]
+
 
 EXPOSE 8000
