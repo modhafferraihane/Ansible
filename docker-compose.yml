@@ -18,7 +18,10 @@ services:
     image: "postgres:latest"
     container_name: monsite_db
     environment:
-      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB=postgres
+      POSTGRES_USER=postgres
+      POSTGRES_PASSWORD=postgres
+    # container_name: postgres_db
     volumes:
       - pgdb:/var/lib/postgresql/data
 
