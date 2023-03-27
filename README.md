@@ -1,5 +1,5 @@
 1) Méthode classique : install vscode, virtualbox, vagrant et pgadmin4 
-2) Méthode innovante : install chocolatey 
+2) Méthode innovante : install chocolatey #h
 Chocolatey for Business (C4B) est l'offre d'entreprise qui permet aux entreprises d'adopter une approche DevOps pour gérer leur environnement Windows, vous permettant de fournir des applications à vos utilisateurs de manière plus fiable et plus rapide.
 
  
